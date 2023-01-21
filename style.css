@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(#ffa600, #c56001);
+  font-family: 'Kaushan Script', sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+
+.column {
+  margin: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.column-header {
+  font-size: 30px;
+  position: relative;
+  text-shadow: 2px 2px #fff;
+}
+
+#big_coffee {
+  user-select: none;
+  display: flex;
+  cursor: pointer;
+  align-self: flex-end;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#big_coffee img {
+  width: 520px;
+}
+
+
+.counter-container {
+  font-size: 30px;
+  margin: 10px;
+  color: #fff;
+  text-shadow: 2px 2px #000000;
+  display: flex;
+  justify-content: center;
+}
+
+.cps-container {
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 2px 2px #000000;
+  display: flex;
+  justify-content: center;
+}
+
+#producer_container {
+  padding: 10px;
+  overflow: auto;
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e5ae09b0-a69f-4795-a0e8-6cb6a65ebd31/d8dbnac-4e140102-df75-48f0-9c53-880cce859497.jpg/v1/fill/w_1600,h_900,q_75,strp/chalkboard_texture_mc2015_by_mattiamc_d8dbnac-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAwIiwicGF0aCI6IlwvZlwvZTVhZTA5YjAtYTY5Zi00Nzk1LWEwZTgtNmNiNmE2NWViZDMxXC9kOGRibmFjLTRlMTQwMTAyLWRmNzUtNDhmMC05YzUzLTg4MGNjZTg1OTQ5Ny5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.EQy0zW4hogAprYLGDlrDvT-LHNKTf5koGvuhdw2-80E');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px #000000;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  height: 500px;
+  width: 800px;
+  align-items: center;
+}
+
+.producer {
+  margin-bottom: 5px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  color: whitesmoke;
+  flex:1;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#costColor {
+  color: red;
+}
+
+.producer-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.producer button {
+  width: 50px;
+  margin: 0 auto; 
+}
+
+
+.producer-title {
+  font-size: 20px;
+  color: greenyellow;
+  text-align: center;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px #ffa600;
+  font-size: 15px;
+  font-family: 'Kaushan Script', sans-serif;
+  width: 50px;
+  color: #ffa600;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .column {
+    flex: 8;
+  }
+
+  #producer_container {
+    width: 600px;
+  }
+
+  #big_coffee img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .column {
+    flex: 6;
+  }
+
+  #producer_container {
+    width: 400px;
+    height: 440px;
+  }
+
+  .producer {
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    flex:1;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    font-size: small;
+  }
+
+  .producer-title {
+    font-size: 20px;
+  }
+  
+
+  #big_coffee img {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+#mute {
+  font-size: 35px;
+  cursor: pointer;
+  padding: 5px;
+}
